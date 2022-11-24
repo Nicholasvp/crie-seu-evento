@@ -10,7 +10,7 @@
 <br>
 
 <p align="center">
-  <img alt="Capa" src="./github/capa.jpg" width="100%">
+  <img alt="Capa" src="./.github/capa.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
