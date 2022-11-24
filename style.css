@@ -41,7 +41,7 @@ body::before {
     background-color: #121214;
 }
 
-body, button, input, select, textarea{
+body, input, select, textarea{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -190,3 +190,45 @@ fieldset  legend {
 input:invalid {
     border: 1px solid #FF1010;
   }
+
+footer {
+    margin: auto 352px;
+    margin-bottom: 100px;
+
+    background: #F0F0F4;
+
+    display: flex;
+    flex-direction: column;
+    
+    height: 136px;
+    padding: 40px 64px;
+}
+
+footer .button {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 10px;
+
+
+    border: 0;
+    background: #04D361;
+    border-radius: 8px;
+}
+
+footer .button:hover {
+    background: #05a84e;
+}
+
+input:invalid {
+    border: 1px solid #FF1010;
+}

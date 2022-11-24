@@ -26,23 +26,23 @@
             formulário de inscrição. </p>
     </header>
     
-    <form>
+    <form id="my-form">
         <fieldset>
            <legend>Informações do Evento</legend> 
            
             <div class="input-wrapper">
                 <label for="event-title"> Título do evento  <span> (mínimo 8 caracteres)</span></label>
-                <input type="text" id="event-title"/>
+                <input type="text" id="event-title" required minlength="8"/>
             </div>
 
             <div class="input-wrapper">
                 <label for="event-link"> Link do evento  <span> (comece com https://)</span></label>
-                <input type="text" id="event-link"/>
+                <input type="url" id="event-link" required/>
             </div>
             
             <div class="input-wrapper">
                 <label for="event-whatsapp"> Whatsapp para contato  <span> (somente números)</span></label>
-                <input type="text" id="event-whatsapp"/>
+                <input type="number" id="event-whatsapp"/>
             </div>
             
             <div class="input-wrapper">
@@ -65,12 +65,12 @@
             <legend>Privacidade</legend> 
             
              <div class="input-wrapper">
-                 <label for="event-mail"> Email do administrador  <span> (digite um email válido)</span></label>
-                 <input type="text" id="event-mail"/>
+                 <label for="event-email"> Email do administrador  <span> (digite um email válido)</span></label>
+                 <input type="email" id="event-email" required/>
              </div>
              <div class="input-wrapper">
                 <label for="event-password"> Senha de acesso para os participantes  <span> (mínimo 8 caracteres)</span></label>
-                <input type="password" id="event-password"/>
+                <input type="password" id="event-password" required minlength="8"/>
             </div>
         </fieldset>
 
@@ -100,6 +100,16 @@
         </fieldset>
 
     </form>
+
+    <footer>
+        
+          <button
+            class="button" 
+            form="my-form">
+            Salvar Evento
+          </button>
+        
+    </footer>
 
 </body>
 </html>
