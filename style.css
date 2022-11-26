@@ -232,3 +232,18 @@ footer .button:hover {
 input:invalid {
     border: 1px solid #FF1010;
 }
+
+@media (max-width:1000px) {
+    body {
+        margin: auto;
+    }
+    header h1 {
+        padding-top: 48px;
+    }
+    header, form, footer {
+        margin: auto;
+    }
+    .col-3 {
+        flex-direction: column;
+    }
+}
